@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+<h1>My Dream Dog</h1>
+  <style>
+
+  h1 {color: #BA2400; font-size:50px;}
+  h2 {color: black; font-size:42px;}
+  body{background-color: #FF5733;}
+
+  p.serif {font-family: "Times New Roman", Times, serif;}
+  #Topic{color:white;}
+
+  </style>
+
+	</head>
+	<body>
+		<!-- Tab links -->
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Dogs')">Dogs</button>
+  <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+  <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+</div>
+
+<!-- Tab content -->
+<div id="London" class="tabcontent">
+  <h3>Dogs</h3>
+	<p> Londoooooon</P>
+</div>
+
+<p>
+If I were to have a dog the breed would be either a Shikoku, Cavilier King Charles spaniel, or a Greyhound…</p>
+
+<div style="background-color:#A32000;color:white;padding:30px;">
+<h2>The Great Shikoku-ken</h2>
+<p class="serif"><img src="./Shikoku.jpg" width="500" height="500"><p>
+<p id="Topic">Ever since I found this breed I thought it was one of the most beautiful dogs I've ever seen. I’ve always
+	just wanted a beautiful dog that would be able to fit the scenery of my dream house.</p>
+</div>
+
+<div style="background-color:#CF2900;color:white;padding:30px;">
+<h2>The Cuddle Floof With The Heart Of Gold</h2>
+<p><img src="./Cavalier King Charles spaniel.jpg" width="500" height="500"><p>
+<p class="serif">These dogs are just amazing floof balls. Everyone one of them i've come in contact with have been both
+	very friendly and playful. I liked toy dogs because I always loved the idea of taking your dog on the go,
+	but at the same time I hated the personalities of most of these types of dogs. Cavilier King Charles
+	Spaniels are different however as they are known for being very amibale dogs and welcoming to strangers,
+	which makes them great family dogs.</p>
+</div>
+
+<div style="background-color:#A32000;color:white;padding:30px;">
+<h2>Athelete Doggo</h2>
+<p><img src="./Greyhound.jpg" width="500" height="500"><p>
+<p class="serif">Ive always loved how calm and cool greyhounds were compared to other energetic dogs.</p>
+</div>
+
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo"></p>
+
+</div>
+
+<div id="Paris" class="tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p>
+</div>
+
+<div id="Tokyo" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello World";
+}
+
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+</script>
+
+
+	</body>
+</html>
